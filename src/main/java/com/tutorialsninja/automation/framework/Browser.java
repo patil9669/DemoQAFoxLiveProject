@@ -8,14 +8,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.opera.OperaDriver;
-
 import com.tutorialsninja.automation.base.Base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Browser {
-	public static Logger log = Logger.getLogger(Browser.class);
+	public static Logger log = Logger.getLogger(Base.class);
 
 	public static WebDriver startBrowser() {
 		String browser = Base.reader.getBrowser().toLowerCase();
@@ -32,12 +30,6 @@ public class Browser {
 			WebDriverManager.iedriver().setup();
 			Base.driver = new InternetExplorerDriver();
 			log.info("Internet Explorer Browser is Started" + Base.driver.hashCode());
-			return Base.driver;
-
-		case "opera":
-			WebDriverManager.operadriver().setup();
-			Base.driver = new OperaDriver();
-			log.info("Opera Browser is Started" + Base.driver.hashCode());
 			return Base.driver;
 
 		case "htmlunit":

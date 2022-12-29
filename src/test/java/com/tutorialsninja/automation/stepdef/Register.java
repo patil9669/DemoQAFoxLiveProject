@@ -24,11 +24,11 @@ public class Register {
 	@Given("^I launch the application$")
 	public void i_launch_the_application()  {
 		
-		Base.driver.get(Base.reader.getUrl());
+		Base.driver.get("http://tutorialsninja.com/demo/");
 	    
 	}
 
-	@Given("^I navigate to Account Registration page$")
+	@And("^I navigate to Account Registration page$")
 	public void i_navigate_to_Account_Registration_page()  {
 		
 		Elements.click(HeadersSection.myAccountLink);

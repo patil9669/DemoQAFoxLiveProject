@@ -25,12 +25,12 @@ public class Waits {
 	}
 	
 	
-	public static void waitUntilElementLocated(int time,WebElement element){
+	public static void waitUntilElementLocated(long time,WebElement element){
 		WebDriverWait wait=new WebDriverWait(Base.driver,time);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	public static void waitUntilElementToClick(int time,WebElement element){
+	public static void waitUntilElementToClick(long time,WebElement element){
 		WebDriverWait wait=new WebDriverWait(Base.driver,time);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		}
@@ -77,8 +77,8 @@ public class Waits {
         }
     }
     
-    public static void waitUntil(BooleanSupplier condition, int seconds) {
-        new WebDriverWait(Base.driver, seconds).until((WebDriver driver) -> condition.getAsBoolean());
+    public static void waitUntil(BooleanSupplier condition, long timeinSec2) {
+        new WebDriverWait(Base.driver, timeinSec2).until((WebDriver driver) -> condition.getAsBoolean());
     }
 
     public static void waitUntil(BooleanSupplier condition) {

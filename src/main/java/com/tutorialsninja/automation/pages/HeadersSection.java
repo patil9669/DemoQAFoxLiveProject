@@ -19,6 +19,12 @@ public class HeadersSection {
 	@FindBy(xpath="//*[@id=\"top-links\"]/ul/li[2]/ul/li[1]/a")
 	public static WebElement register;
 
+	@FindBy(xpath="//*[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a")
+	public static WebElement login;
 	
+	@FindBy(xpath="//*[@id=\"search\"]/input")
+	public static WebElement searchBoxField;
 	
+	@FindBy(xpath="//*[@id=\"search\"]/span/button")
+	public static WebElement searchButtton;
 }
