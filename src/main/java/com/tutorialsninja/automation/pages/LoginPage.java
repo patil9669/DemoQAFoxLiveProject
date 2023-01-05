@@ -36,4 +36,12 @@ public class LoginPage {
 	Elements.click(LoginPage.loginButton);
 	
 	}
+	
+	public static void doLogin() {
+		
+		Elements.TypeText(LoginPage.email, Base.reader.getUsername());
+		Elements.TypeText(LoginPage.password, Base.reader.getPassword());
+		Elements.click(LoginPage.loginButton);
+		
+	}
 }

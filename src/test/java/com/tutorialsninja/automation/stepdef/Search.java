@@ -24,7 +24,7 @@ public class Search {
 	@Then("^I should see the product in the search resultsil address$")
 	public void i_should_see_the_product_in_the_search_resultsil_address() {
 		
-		Assert.assertTrue(Elements.isDisplayed(SearchResultPage.samsungSyncMasterSearcResult));
+		Assert.assertTrue(Elements.isDisplayed(SearchResultPage.HPLP3065));
 
 	}
 

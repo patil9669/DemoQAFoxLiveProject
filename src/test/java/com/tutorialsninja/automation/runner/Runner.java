@@ -7,10 +7,10 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions
-(features={"D:\\Automation\\DATA NEW\\GitHubRepo\\DemoQAFoxLiveProject\\src\\test\\resources\\FeatureFiles\\Login.feature"},
+(features={"D:\\Automation\\DATA NEW\\GitHubRepo\\DemoQAFoxLiveProject\\src\\test\\resources\\FeatureFiles\\Orders.feature"},
 		glue={"com.tutorialsninja.automation.stepdef"},
 		plugin={"html:target/cucumber_html_report"},
-		tags={"@Login","@Four"}
+		tags={"@Orders","@One"}
 		)
 
 public class Runner {
