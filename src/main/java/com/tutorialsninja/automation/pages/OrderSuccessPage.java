@@ -10,12 +10,10 @@ public class OrderSuccessPage {
 	
 	public OrderSuccessPage() {
 		
-		PageFactory.initElements(Base.driver, this);
+		PageFactory.initElements(Base.driver,this);
 		
 	}
 	
-	//@FindBy(linkText="Success")
-	@FindBy(css="div[class$='col-sm-12']")
+	@FindBy(linkText="Success")
 	public static WebElement successBreadcrumb;
-
 }

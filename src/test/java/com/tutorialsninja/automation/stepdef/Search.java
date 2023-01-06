@@ -21,10 +21,10 @@ public class Search {
 		Elements.click(HeadersSection.searchButtton);
 	}
 
-	@Then("^I should see the product in the search resultsil address$")
-	public void i_should_see_the_product_in_the_search_resultsil_address() {
+	@Then("^I should see the product in the search results$")
+	public void i_should_see_the_product_in_the_search_results() {
 		
-		Assert.assertTrue(Elements.isDisplayed(SearchResultPage.HPLP3065));
+		Assert.assertTrue(Elements.isDisplayed(SearchResultPage.hPLP3065));
 
 	}
 

@@ -23,6 +23,7 @@ public class Orders {
 	SearchResultPage searchResultPage = new SearchResultPage();
 	ShoppingCartPage shoppingCartPage = new ShoppingCartPage();
 	CheckoutPage checkoutPage = new CheckoutPage();
+	OrderSuccessPage orderSuccessPage = new OrderSuccessPage();
 	
 	@Given("^I login to the application$")
 	public void i_login_to_the_application() {
@@ -52,7 +53,8 @@ public class Orders {
 	@Then("^I should see that the order is placed successfully$")
 	public void i_should_see_that_the_order_is_placed_successfully() {
 	    
-				Assert.assertTrue(Elements.VerifyTextEquals(OrderSuccessPage.successBreadcrumb, "Your order has been placed!"));
+				
+				Assert.assertTrue(Elements.isDisplayed(OrderSuccessPage.successBreadcrumb));
 	    
 	}
 

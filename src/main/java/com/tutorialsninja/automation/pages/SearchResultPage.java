@@ -15,14 +15,21 @@ public class SearchResultPage {
 		
 	}
 	
-	@FindBy(linkText="HP LP3065")
-	public static WebElement HPLP3065;
+	@FindBy(xpath="//*[@id=\"search\"]/input")
+	public static WebElement searchBoxField;
+	
+	//@FindBy(linkText="HP LP3065")
+	@FindBy(xpath="//*[@id=\"content\"]/div[3]/div/div/div[2]/div[1]/h4/a")
+	public static WebElement hPLP3065;
+	
+	@FindBy(xpath="//*[@id=\"search\"]/span/button")
+	public static WebElement searchButtton;
 	
 	@FindBy(css="input[id='button-search']+h2+p")
 	public static WebElement noResultsMessage;
 	
-	//@FindBy(xpath = "//span[text()='Add to Cart'][1]")
-	@FindBy(xpath ="//*[@id=\"content\"]/div[3]/div/div/div[2]/div[2]/button[1]")
+	@FindBy(xpath = "//span[text()='Add to Cart'][1]")
+	//@FindBy(xpath ="//*[@id=\"content\"]/div[3]/div/div/div[2]/div[2]/button[1]")
 	public static WebElement firstAddToCartOption;
 	
 	@FindBy(xpath="//*[@id=\"button-cart\"]")
